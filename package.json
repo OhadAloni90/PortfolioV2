@@ -1,6 +1,9 @@
 {
   "name": "OhadAloniPort",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.15.0"
+  },
   "private": true,
   "dependencies": {
     "@popmotion/popcorn": "^0.4.4",
