@@ -7,7 +7,7 @@ function BackgroundText({ visible }) {
 		<div className={clsx(cn.container, visible && cn.visible)}>
 			Welcome
 			<br />
-			To the portfolio!
+			People!
 		</div>
 	);
 }

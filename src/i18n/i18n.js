@@ -4,9 +4,10 @@ import { initReactI18next } from 'react-i18next';
 import en from './translations/en.json';
 import es from './translations/es.json';
 import zh from './translations/zh.json';
-
+import he from './translations/he.json';
 const resources = {
 	en: en,
+	he: he,
 	es: es,
 	'es-ES': es,
 	zh: zh,

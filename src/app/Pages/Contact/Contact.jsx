@@ -7,7 +7,8 @@ import ContantForm from './components/ContantForm';
 
 const DiagonalBox = styled.div`
   position: relative;
-  background-color: #ffeeee;
+  background: var(--background-color);
+  transition: background 350ms;
 
   height: 15rem;
   &::before {
@@ -24,7 +25,8 @@ const DiagonalBox = styled.div`
 
 const DivBox = styled.div`
   position: relative;
-  background-color: #ffeeee;
+  background: var(--background-color);
+  transition: background 350ms;
   height: 10rem;
   width: 100%;
 `;
@@ -40,7 +42,7 @@ const Content = styled.div`
 
 
 
-const Contact = () => {
+const Contact = ({ theme }) => {
   return (
     <>
         <DiagonalBox style={{ zIndex: "200" }}>
@@ -52,7 +54,7 @@ const Contact = () => {
       </p>
     </Content>
   </DiagonalBox>
-    <div style={{display: 'flex', alignContent: 'center', justifyContent: 'center', backgroundColor: '#ffeeee'}} >
+    <div  className={cn.container} style={{display: 'flex', alignContent: 'center', justifyContent: 'center'}} >
     <ContantForm />
 
     </div>

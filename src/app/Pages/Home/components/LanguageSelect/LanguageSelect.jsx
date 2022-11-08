@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ReactComponent as LanguageIcon } from './assets/globe.svg';
 import cn from './LanguageSelect.module.scss';
 
-const supportedLanguages = ['en', 'es', 'zh'];
+const supportedLanguages = ['en', 'es', 'zh', 'he'];
 
 function LanguageSelect({ visible }) {
 	const { t, i18n } = useTranslation();

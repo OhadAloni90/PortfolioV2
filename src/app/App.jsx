@@ -30,6 +30,7 @@ const App = () => {
         data-mouse-hover="button"
         data-mouse-hover-text="toggle theme"
       >
+
         <Toggle checked={!!theme} icons={false} onChange={toggle} />
       </div>
       <CustomMouseCursor />
@@ -43,14 +44,14 @@ const App = () => {
 
 
             </Routes>
-            
+            <About theme={theme}/>
+      <Contact theme={theme}/>
           </Suspense>
         </>
 
 
       </LoadingSplash> 
-      <About/>
-      <Contact/>
+
 
 
     </>

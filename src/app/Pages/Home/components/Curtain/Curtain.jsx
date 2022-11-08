@@ -1,5 +1,5 @@
 import { useLayoutEffect, memo } from 'react';
-import { ReactComponent as ChineseName } from '../../../../assets/chinese.svg';
+import { ReactComponent as MyName } from '../../../../assets/chinese.svg';
 import cn from './Curtain.module.scss';
 
 function Curtain({ y }) {
@@ -23,7 +23,7 @@ function Curtain({ y }) {
 			data-mouse-hover-text='Scroll down'
 		>
 			<h1 className={cn.name} id={cn.behind}>
-				<ChineseName />
+				<MyName />
 			</h1>
 			<div id={cn.border}>
 				<div
@@ -32,7 +32,7 @@ function Curtain({ y }) {
 					data-mouse-hover-text='Scroll down'
 				>
 					<h1 className={cn.name} id={cn.front}>
-						<ChineseName />
+						<MyName />
 					</h1>
 				</div>
 			</div>

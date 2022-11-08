@@ -16,8 +16,8 @@ import SkillsCard from "./components/SkillsCard";
 
 const DiagonalBox = styled.div`
   position: relative;
-  background-color: #ffeeee;
-
+  background: var(--background-color);
+  transition: background 350ms;
   height: 15rem;
   &::before {
     content: "";
@@ -33,7 +33,8 @@ const DiagonalBox = styled.div`
 
 const DivBox = styled.div`
   position: relative;
-  background-color: #ffeeee;
+  background: var(--background-color);
+  transition: background 350ms;
   height: 10rem;
   width: 100%;
 `;
@@ -46,7 +47,7 @@ const Content = styled.div`
   padding: 3rem 2rem;
 `;
 
-const About = () => {
+const About = ({ theme }) => {
   const [showFakeLinkExplanation, setShowFakeLinkExplanation] = useState(false);
 
   const Compo = () => {
@@ -55,6 +56,7 @@ const About = () => {
     const ref = useRef(null);
     const isInView = useInView(ref);
     const controls = useAnimation();
+    const curTheme = theme;
 
 
     
@@ -66,9 +68,9 @@ const About = () => {
         controls.start("hidden");
       }
     }, [controls, isInView]);
-
+    console.log(curTheme)
     return (
-      <div className={cn.sideDev}>
+      <div className={cn.sideDev} theme={curTheme}>
         <div className={cn.container}>
           <motion.div animate={{ controls }} ref={ref} style={{ scale }}>
             <div className={cn.leftSide}>

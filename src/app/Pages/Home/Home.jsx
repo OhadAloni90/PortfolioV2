@@ -22,7 +22,7 @@ const Home = ({ theme }) => {
 	const [viewModelState, setViewModelState] = useState(false);
 	const { y } = useScroll();
 	const { project, setProject } = useProject(y, projectsRef);
-
+	
 	return (
 		<main className={cn.container}>
 			<div className={cn.header}>
@@ -98,7 +98,7 @@ const Home = ({ theme }) => {
 					</div>
 				</Timeline>
 			</div>
-			{ y < window.innerHeight * 6 && <ScrollableNotice />}
+			{ y < window.innerHeight * 3 && <ScrollableNotice />}
 		</main>
 	);
 };
