@@ -1,0 +1,54 @@
+.container {
+    position: absolute;
+    height: 35px;
+    top: max(calc(5vw - 3px), 15px);
+    right: max(calc(6vw + 100px), 120px);
+    font-size: 1.45em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #7D46C2;
+    margin: 0;
+    transition: color 350ms;
+    cursor: pointer;
+    letter-spacing: 1px;
+    opacity: 0;
+    transition: opacity 350ms;
+
+    &:hover,
+    &:active {
+        color: #649BFF;
+
+        &>svg {
+            fill: #649BFF;
+        }
+    }
+    
+    &.visible {
+        opacity: 1;    
+    }
+
+    @media screen and (max-width: 600px) {
+        top: max(2vw, 17px);
+        right: max(calc(2vw + 20px), 75px);
+        font-size: 1em;
+    }
+
+    &>svg {
+        position: absolute;
+        left: -36px;
+        top: 4px;
+        height: 27px;
+        width: 27px;
+        fill: #7D46C2;
+        transition: fill 350ms;
+        & path {
+            pointer-events: none;
+        }
+        
+        @media screen and (max-width: 600px) {
+            left: -1.5em;
+            top: 0.2em;
+            height: 1em;
+        }
+    }
+}

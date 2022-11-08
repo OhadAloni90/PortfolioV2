@@ -1,0 +1,11 @@
+#container {
+    height: 100vh;
+    width: 100vw;
+    // top: 12vh;
+
+    @media screen and (max-aspect-ratio: 1/1) and (max-width: 767px){
+        height: 75vh !important;
+        top: 25vh;
+        pointer-events: none;
+    }
+}

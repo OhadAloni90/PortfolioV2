@@ -1,0 +1,21 @@
+.container {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    background-color: #151515;
+
+    &>h1 {
+        width: min(calc(100vw - 40px), 800px);
+        color: white;
+        text-align: center;
+        font-size: 3em;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    color: white;
+    font-size: 2em;
+    & a {
+        margin: 20px;
+    }
+}

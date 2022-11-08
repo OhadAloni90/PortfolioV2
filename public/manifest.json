@@ -1,0 +1,21 @@
+{
+    "short_name": "Ohad Aloni",
+    "name": "Ohad Aloni",
+    "icons": [
+      {
+
+        "type": "image/png",
+        "sizes": "144x144"
+      },
+      {
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#151515",
+    "background_color": "#151515"
+  }
+  

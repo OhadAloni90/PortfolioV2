@@ -1,0 +1,5 @@
+.container {
+    @media screen and (max-aspect-ratio: 1/1) and (max-width: 1080px) {
+        display: none;
+    }
+}

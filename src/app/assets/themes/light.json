@@ -1,0 +1,18 @@
+{
+    "themeName": "Light",
+    "themeStyles": {
+        "--dark-mode": "0",
+        "--background-color": "#FFEEEE",
+        "--model-bg-fallback": "rgb(255,238,238)",
+        "--model-bg": "linear-gradient(180deg, rgba(255,238,238,1) 0%, rgba(158,237,255,1) 92%)",
+        "--background-color-alt": "#151515",
+        "--background-emphasis": "#ffe3e3",
+        "--text-color": "#000000",
+        "--text-color-alt": "#FFEEEE",
+        "--emphasis-text": "#FF9999",
+        "--accent-color": "#FF00FF",
+        "--accent-color-alt": "#00FFFF",
+        "--emphasis-shadow": "#000000",
+        "--footer-profile-silhouette": 0
+    }
+}

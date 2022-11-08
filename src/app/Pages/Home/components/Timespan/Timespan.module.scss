@@ -1,0 +1,28 @@
+.container {
+    position: absolute;
+    font-size: 1.1em;
+    bottom: 5vw;
+    right: max(6vw, 20px);
+    color: #7D46C2;
+    mix-blend-mode: difference;
+    font-weight: bold;
+    opacity: 0;
+    transition: opacity 350ms;
+
+    &.visible {
+        opacity: 1;
+    }
+
+    &>span {
+        color: #649BFF;
+        margin: 0px 10px;
+    }
+
+    @media screen and (max-width: 600px) {
+        transform-origin: top right;
+        transform: rotateZ(-90deg);
+        right: max(2vw, 30px);
+        white-space: nowrap;
+        top: 60px;
+    }
+}

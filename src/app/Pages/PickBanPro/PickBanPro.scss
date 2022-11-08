@@ -1,0 +1,118 @@
+figure.hero {
+    background-color: rgb(255, 235, 122);
+    height: 40vh;
+    width: 75vw;
+    border-bottom-right-radius: 30vh;
+    background-size: cover;
+
+    @media screen and (max-width: 850px) {
+        height: 70vh;
+        border-bottom-right-radius: 30vh;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        height: 140vh;
+        width: 15vw;
+        background: repeating-linear-gradient(45deg,
+                #88888833 4px,
+                #88888833 5px,
+                transparent 6px,
+                transparent 25px);
+        transform: translateX(82vw) translateY(-70vh);
+
+        @media screen and (max-width: 850px) {
+            background: repeating-linear-gradient(45deg,
+                    #88888833 4px,
+                    #88888833 5px,
+                    transparent 6px,
+                    transparent 20px);
+            width: 25vw;
+            transform: translateX(75vw) translateY(-70vh);
+        }
+    }
+}
+
+h1.title {
+    transform: translateY(-8rem);
+    padding-right: 12vw;
+    color: var(--text-color);
+    text-align: right;
+    font: 8rem 'Hyperwave';
+    line-height: 4.5rem;
+    transition: color 350ms;
+    text-shadow: 5px 5px #a200ff;
+
+    @media screen and (min-width: 850px) {
+        transform: translateY(-6rem);
+        font-size: 12rem;
+        line-height: 11rem;
+    }
+
+    @media screen and (min-width: 1500px) {
+        transform: translateY(-8rem);
+        font-size: 17rem;
+        line-height: 13rem;
+    }
+}
+
+.description {
+    margin: 0px auto 100px;
+    width: calc(100vw - 30px);
+    max-width: 1000px;
+    color: var(--text-color);
+    font-family: 'Red Hat Display';
+    font-size: 2rem;
+    transition: color 350ms;
+
+    &.light {
+        font-weight: normal;
+        font-size: 1.8rem;
+
+        @media screen and (max-width: 850px) {
+            font-size: 1rem;
+        }
+    }
+
+    & a {
+        display: inline;
+        color: var(--text-accent);
+
+        &:hover,
+        &:active,
+        &:focus {
+            text-decoration: underline;
+        }
+    }
+
+    @media screen and (max-width: 850px) {
+        text-align: justify;
+        padding: 0 15px 0 20px;
+        font-size: 1.2rem;
+    }
+}
+
+.image-expand--holder {
+    margin: 100px auto;
+    width: calc(100vw - 20px);
+    overflow: hidden;
+    border: 1px solid #F68080;
+    border-radius: 4px;
+
+    & img.splash {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 350ms;
+
+        &:hover {
+            transform: scale(1.02);
+        }
+    }
+}
+
+.pickbanpro span {
+    color: #a200ff;
+    font-weight: bold;
+}

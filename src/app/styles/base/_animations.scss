@@ -1,0 +1,31 @@
+:root{
+    --animation-time: 350ms;
+    --animation-quick: 100ms;
+}
+@keyframes fade{
+    from { opacity: 0 }
+    to   { opacity: 1 }
+}
+@keyframes blend {
+    0%   { background-position: 100% 100% }
+    33%  { background-position: 0%   100% }
+    66%  { background-position: 0%   0%   }
+    100% { background-position: 100% 0%   }
+}
+
+.fade-quick-enter {
+    opacity: 0;
+}
+.fade-quick-exit {
+    opacity: 1;
+}
+.fade-quick-enter-active {
+    opacity: 1;
+}
+.fade-quick-exit-active {
+    opacity: 0;
+}
+.fade-quick-enter-active,
+.fade-quick-exit-active{
+    transition: opacity var(--animation-time);
+}

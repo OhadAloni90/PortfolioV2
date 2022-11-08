@@ -1,0 +1,30 @@
+h2{
+    color: var(--emphasis-text);
+    font: 5.5rem/3.5rem 'Hyperwave';
+    margin: 0;
+    text-shadow: 5px 5px var(--emphasis-shadow);
+    @media (min-width: 600px){
+        font: 10rem/3.5rem 'Hyperwave';
+    }
+    @media (min-width: 900px){
+        font: 15rem/3.5rem 'Hyperwave';
+    }
+    @media (min-width: 1200px){
+        font: 20rem/3.5rem 'Hyperwave';
+    }
+}
+h3{
+    font: bold 3rem/3rem 'Red Hat Display';
+    margin: 10px 0;
+    @media (min-width: 600px){
+        font-size: 4.5rem;
+        line-height: 4rem;
+    }
+    @media (min-width: 900px){
+        font-size: 6.5rem;
+        line-height: 6rem;
+    }
+}
+span{
+    color: var(--text-accent);
+}

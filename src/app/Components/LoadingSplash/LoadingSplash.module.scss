@@ -1,0 +1,94 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    // background-color: black;
+    // background-color: transparent;
+    // background-color: #404040;
+    // background-color: var(--background-color);
+    transition: background-color 800ms, left 2000ms;
+    z-index: 1000;
+    &::before {
+        content: '';
+        left: -150px;
+        position: absolute;
+        border-left: 150px solid transparent;
+    }
+
+    & p {
+        font-size: min(10vw, 100px);
+        font-family: Poppins;
+        font-weight: bold;
+    }
+
+    &.close {
+        left: calc(100vw + 150px);
+
+        &:nth-child(2) {
+            transition: background-color 350ms, left 800ms 400ms;
+        }
+
+        &:nth-child(3) {
+            transition: background-color 350ms, left 650ms ease-in 100ms;
+        }
+
+        &:nth-child(4) {
+            transition: background-color 350ms, left 800ms;
+
+        }
+    }
+
+    &>.content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        // background-color: transparent;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: var(--text-color);
+        font-size: var(--font-size-large);
+        font-weight: var(--font-weight-bold);
+        transition: color 350ms, font-size 350ms;
+    }
+
+    &:nth-child(3) {
+        // background-color: var(--background-color);
+        background-color: #303030;
+        transition: background-color 350ms, left 300ms;
+
+        &::before {
+            // border-bottom: 100vh solid var(--background-color);
+            border-bottom: 100vh solid #303030;
+
+        }
+    }
+
+    &:nth-child(4) {
+        // background-color: var(--background-emphasis);
+        background-color: #505050;
+        transition: background-color 350ms, left 250ms ease-in 100ms;
+
+        &::before {
+            // border-bottom: 100vh solid var(--background-emphasis);
+            border-bottom: 100vh solid #505050;
+
+        }
+    }
+
+    &:nth-child(5) {
+        background-color: #151515;
+        transition: background-color 350ms, left 400ms 300ms;
+
+        &::before {
+            border-bottom: 100vh solid #151515;
+        }
+    }
+}

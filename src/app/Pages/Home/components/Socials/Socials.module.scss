@@ -1,0 +1,45 @@
+.container {
+    // position: fixed;
+    position: absolute;
+    bottom: 5vw;
+    left: 6vw;
+    height: 35px;
+
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+    place-content: center;
+
+    @media screen and (max-width: 768px) {
+        grid-auto-flow: row;
+        height: auto;
+        row-gap: 10px;
+        left: calc(2vw + 2px);
+        bottom: 30px;
+    }
+
+    &>a {
+        display: grid;
+
+        &:hover {
+            &>svg {
+                fill: #649BFF;
+            }
+        }
+        &>svg {
+            height: 35px;
+            width: 35px;
+            fill: #7D46C2;
+            transition: fill 350ms;
+
+            @media screen and (max-width: 768px) {
+                height: 30px;
+                width: 30px;
+            }
+
+            & path {
+                pointer-events: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,86 @@
+[{
+    "name": "Portfolio V2",
+    "displayName": "Portfolio V2",
+    "date": {
+        "start": "2022"
+    },
+    "url": "https://",
+    "image": {
+        "src": "https://boba.watch/bobawatch.png",
+        "alt": "Portfolio V2"
+    },
+    "links": [{
+            "url": "https:/",
+            "title": "visit"
+        },
+        {
+            "url": "https:/",
+            "title": "code"
+        }
+
+    ]
+}, {
+    "name": "Portfolio V1",
+    "displayName": "Portfolio V1",
+    "date": {
+        "start": "01-09-2022",
+        "end": "01-11-2022"
+    },
+    "url": "",
+    "image": {
+        "src": "./assets/learn.png",
+        "alt": "Screenshot of Learn article"
+    },
+    "links": [{
+            "url": "https:/",
+            "title": "code"
+        },
+        {
+            "url": "https://",
+            "title": "code"
+        }
+    ]
+}, {
+    "name": "SilvieNZax",
+    "displayName": "SilvieNZax - Ecommrance",
+    "date": {
+        "start": "09-01-2022"
+
+    },
+    "url": "https:/",
+    "image": {
+        "src": "https://data-vis.learn.ryqn.dev/assets/splash.png",
+        "alt": "Data Vis Reference Heatmap page"
+    },
+    "links": [{
+            "url": "https:/",
+            "title": "visit"
+        },
+        {
+            "url": "https://github.com/",
+            "title": "code"
+        }
+    ]
+}, {
+    "name": "Machine learning TAU Project",
+    "displayName": "Pick Ban Pro",
+    "date": {
+        "start": "2021-05-21",
+        "end": "2021-11-21"
+    },
+    "url": "https:/",
+    "image": {
+        "src": "./assets/pickbanpro.png",
+        "alt": "Pick Ban Pro product display"
+    },
+    "links": [{
+            "url": "https:/",
+            "title": "visit"
+        },
+        {
+            "url": "https:/",
+            "title": "code"
+        }
+    ]
+}
+]

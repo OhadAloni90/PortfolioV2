@@ -1,0 +1,167 @@
+.boba-watch--wrapper {
+    font-family: 'Poppins';
+
+    & .bwatch--layers {
+        position: relative;
+        bottom: 0;
+        height: 100%;
+
+        & .bwatch-layer {
+            bottom: 20px;
+            margin-left: 40vw;
+            position: absolute;
+            transform: rotateX(65deg) rotateZ(-45deg) translateZ(0) scale(1.4);
+            height: 35vw;
+            width: 20vw;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.4);
+            z-index: 5;
+
+            @media screen and (max-width: 850px) {
+                transform: rotateX(65deg) rotateZ(-45deg) translateZ(0) scale(1.8);
+                bottom: calc(15vh + 50px);
+            }
+        }
+
+        & #layer-1 {
+            background-image: url('../../assets/layer3.png');
+            margin-top: 0;
+        }
+
+        & #layer-2 {
+            background-image: url('../../assets/layer2.png');
+            margin-bottom: calc(10vh * var(--scroll-small) + 5vh);
+        }
+
+        & #layer-3 {
+            background-image: url('../../assets/layer1.png');
+            margin-bottom: calc(20vh * var(--scroll-small) + 10vh);
+        }
+    }
+
+    & figure.hero {
+        background-color: #F68080;
+        height: 80vh;
+        width: 85vw;
+        border-bottom-right-radius: 30vh;
+        background-size: cover;
+
+        @media screen and (max-width: 850px) {
+            height: 70vh;
+            border-bottom-right-radius: 30vh;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            height: 110vh;
+            width: 15vw;
+            background: repeating-linear-gradient(45deg,
+                    #88888833 4px,
+                    #88888833 5px,
+                    transparent 6px,
+                    transparent 25px);
+            transform: translateX(82vw) translateY(-70vh);
+
+            @media screen and (max-width: 850px) {
+                background: repeating-linear-gradient(45deg,
+                        #88888833 4px,
+                        #88888833 5px,
+                        transparent 6px,
+                        transparent 20px);
+                width: 25vw;
+                transform: translateX(75vw) translateY(-70vh);
+            }
+        }
+    }
+
+    & h1 {
+        transform: translateY(-5rem);
+        padding-right: 13vw;
+        color: var(--text-color);
+        text-align: right;
+        font-size: 5rem;
+        line-height: 4.5rem;
+        font-weight: bold;
+        transition: color 350ms;
+
+        @media screen and (min-width: 850px) {
+            transform: translateY(-3rem);
+            font-size: 7rem;
+            line-height: 11rem;
+        }
+
+        @media screen and (min-width: 1200px) {
+            transform: translateY(-5rem);
+            font-size: 9rem;
+            line-height: 11rem;
+        }
+
+        @media screen and (min-width: 1500px) {
+            transform: translateY(-8rem);
+            font-size: 11rem;
+            line-height: 13rem;
+        }
+    }
+
+    & .description {
+        margin: 0px auto 100px;
+        width: calc(100vw - 40px);
+        max-width: 1000px;
+        color: var(--text-color);
+        font-family: 'Red Hat Display';
+        font-size: 2rem;
+        transition: color 350ms;
+        & span {
+            font-weight: bold;
+
+        }
+        &.light {
+            font-weight: normal;
+            font-size: 1.8rem;
+
+            @media screen and (max-width: 850px) {
+                font-size: 1rem;
+            }
+        }
+
+        & a {
+            display: inline;
+            color: var(--text-accent);
+
+            &:hover,
+            &:active,
+            &:focus {
+                text-decoration: underline;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+            text-align: justify;
+            padding: 0 15px 0 20px;
+            font-size: 1.2rem;
+        }
+    }
+
+    & .image-expand--holder {
+        margin: 100px auto;
+        width: 90vw;
+        height: 60vw;
+        overflow: hidden;
+        border: 1px solid #F68080;
+        border-radius: 4px;
+
+        & img.splash {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            transition: transform 350ms;
+
+            &:hover {
+                transform: scale(1.02);
+            }
+        }
+    }
+}

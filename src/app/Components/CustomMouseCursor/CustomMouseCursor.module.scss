@@ -1,0 +1,81 @@
+:root {
+    // --custom-mouse-cursor-color: #7D46C2;
+    // --custom-mouse-cursor-bg: #7D46C288;
+    --custom-mouse-cursor-color: #fff;
+    --custom-mouse-cursor-bg: #ffffffaa;
+    --custom-mouse-cursor-color-link: #6488ff;
+    --custom-mouse-cursor-bg-link: #6488ff;
+    --custom-mouse-cursor-color-button: #943efd;
+    --custom-mouse-cursor-bg-button: #943efd;
+    // --custom-mouse-cursor-color-link: #7D46C2;
+    // --custom-mouse-cursor-bg-link: #7D46C288;
+}
+.container {
+    position: fixed;
+    top: -100px;
+    left: -100px;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    
+    mix-blend-mode: soft-light;
+    background-color: var(--custom-mouse-cursor-bg);
+    border: 2px solid var(--custom-mouse-cursor-color);
+    border-radius: 50%;
+
+    z-index: 2000;
+    pointer-events: none;
+    user-select: none;
+
+    will-change: top, left;
+
+    transition: top 250ms ease-out, left 250ms ease-out, height 350ms, width 350ms, color 250ms, background-color 250ms, border-color 250ms;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+        
+    &>svg {
+        overflow: visible;
+        height: 140px;
+        width: 140px;
+        position: absolute;
+        top: calc(-23px);
+        left: calc(-23px);
+        animation: rotate infinite 10s linear;
+    }
+
+    &.link {
+        mix-blend-mode: difference;
+        height: 100px;
+        width: 100px;
+        border-color: var(--custom-mouse-cursor-color-link);
+        background-color: var(--custom-mouse-cursor-bg-link);
+    }
+
+    & text {
+        font-size: 3em;
+        text-transform: uppercase;
+        font-weight: bold;
+        fill: #6488ff;
+    }
+
+    @keyframes rotate {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+        
+    }
+
+    &.button {
+        mix-blend-mode: difference;
+        height: 100px;
+        width: 100px;
+        border-color: var(--custom-mouse-cursor-color-button);
+        background-color: var(--custom-mouse-cursor-bg-button);
+    }
+}
+
