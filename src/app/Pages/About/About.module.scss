@@ -59,13 +59,9 @@
   align-content: center;
   flex-wrap: wrap;
   /* From https://css.glass */
-  background: linear-gradient(
-    30deg,
-    rgba(120, 35, 131, 0.452),
-    rgba(105, 97, 97, 0.2)
-  );
+  background: rgba(179, 175, 175, 0.616);
   border-radius: 0px 16px 16px 0px;
-  box-shadow: 1rem 1rem 3rem rgba(1, 0, 0, 0.5);
+  box-shadow: 1rem 1rem 3rem rgba(1, 2, 0, 0.103);
   backdrop-filter: blur(8.9px);
   -webkit-backdrop-filter: blur(8.9px);
   border: 0.2rem solid rgba(22, 22, 22, 0.33);
